@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Hot</title>
+</head>
+<body>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; 
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.album-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.album-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.album-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 15px;
+}
+.album {
+    position: relative;
+    width: 100%;
+    text-align: left; 
+    transition: transform 0.3s ease;
+}
+.album img {
+    width: 100%;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+.album:hover {
+    transform: scale(1.05);
+}
+
+.album:hover img {
+    opacity: 0.6;
+}
+.album-title {
+    font-size: 14px;
+    font-weight: bold; 
+    color: white; 
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.album-artist {
+    font-size: 12px;
+    color: gray; 
+    font-weight: normal; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+</style>
+
+    <div class="album-container">
+        <h2>Album Hot</h2>
+        <div class="album-list">
+            <div class="album">
+                <img src="https://th.bing.com/th/id/OIP.3XdhL_22OJHtjfPSePxixwAAAA?rs=1&pid=ImgDetMain" alt="Baby Honey">
+                <p class="album-title">Baby Honey (Single)</p>
+                <p class="album-artist">DUYDATDO, Đức Anh, Kiyoshi Phan</p>
+            </div>
+            <div class="album">
+                <img src="https://th.bing.com/th/id/OIP.dBd7t2lfSAX7ScRUudSeggAAAA?rs=1&pid=ImgDetMain" alt="Cứu Non">
+                <p class="album-title">Cừu Non (Single)</p>
+                <p class="album-artist">Châu Dương, Đinh Quang Đạt</p>
+            </div>
+            <div class="album">
+                <img src="https://th.bing.com/th/id/OIP.BP5bgaZoV01ssCNxjqa-jwAAAA?rs=1&pid=ImgDetMain" alt="Người Ơi Đừng Bỏ Quê">
+                <p class="album-title">Người Ơi Đừng Bỏ Quê...</p>
+                <p class="album-artist">Hồ Văn Cường</p>
+            </div>
+            <div class="album">
+                <img src="https://th.bing.com/th/id/OIP.7Qq-lxG6b9ncy5m148jjagHaHa?rs=1&pid=ImgDetMain" alt="Nghe Nói Anh Yêu Em">
+                <p class="album-title">Nghe Nói Anh Yêu Em</p>
+                <p class="album-artist">Châu Khải Phong, Ngân</p>
+            </div>
+            <div class="album">
+                <img src="https://th.bing.com/th/id/OIP.4hupUiXwmh2_geCeuk6fqAAAAA?rs=1&pid=ImgDetMain" alt="Tự Ta Đa Tình Tự Ta Đau">
+                <p class="album-title">Tự Ta Đa Tình Tự Ta Đau</p>
+                <p class="album-artist">Bạch Công Khanh</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
